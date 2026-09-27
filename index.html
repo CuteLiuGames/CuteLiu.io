@@ -29,9 +29,6 @@
     // Modify or remove this function to customize the visually presented
     // way that non-critical warnings and error messages are presented to the
     // user.
-
-    const canvasElement = document.querySelector("#unity-canvas");
-
     function resizeGame() {
       if (!(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))) {
         var myWidth = innerWidth;
@@ -131,7 +128,6 @@
           }
         });
 
-        // Observe the parent container element 
         resizeObserver.observe(document.querySelector("#unity-container"));
 
       }).catch((message) => {
